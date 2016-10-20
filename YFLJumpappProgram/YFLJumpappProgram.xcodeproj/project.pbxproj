@@ -15,6 +15,7 @@
 		3AD4298A1DB86CEB00D6F0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD429881DB86CEB00D6F0E9 /* LaunchScreen.storyboard */; };
 		3AD429951DB86CEB00D6F0E9 /* YFLJumpappProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD429941DB86CEB00D6F0E9 /* YFLJumpappProgramTests.m */; };
 		3AD429A01DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4299F1DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.m */; };
+		3AD429AF1DB86E6200D6F0E9 /* JumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD429AE1DB86E6200D6F0E9 /* JumpManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3AD4299B1DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLJumpappProgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD4299F1DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLJumpappProgramUITests.m; sourceTree = "<group>"; };
 		3AD429A11DB86CEB00D6F0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD429AD1DB86E6200D6F0E9 /* JumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpManager.h; sourceTree = "<group>"; };
+		3AD429AE1DB86E6200D6F0E9 /* JumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				3AD429881DB86CEB00D6F0E9 /* LaunchScreen.storyboard */,
 				3AD4298B1DB86CEB00D6F0E9 /* Info.plist */,
 				3AD4297A1DB86CEB00D6F0E9 /* Supporting Files */,
+				3AD429AD1DB86E6200D6F0E9 /* JumpManager.h */,
+				3AD429AE1DB86E6200D6F0E9 /* JumpManager.m */,
 			);
 			path = YFLJumpappProgram;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				3AD429821DB86CEB00D6F0E9 /* ViewController.m in Sources */,
 				3AD4297F1DB86CEB00D6F0E9 /* AppDelegate.m in Sources */,
 				3AD4297C1DB86CEB00D6F0E9 /* main.m in Sources */,
+				3AD429AF1DB86E6200D6F0E9 /* JumpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
