@@ -16,6 +16,7 @@
 		3AD429951DB86CEB00D6F0E9 /* YFLJumpappProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD429941DB86CEB00D6F0E9 /* YFLJumpappProgramTests.m */; };
 		3AD429A01DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4299F1DB86CEB00D6F0E9 /* YFLJumpappProgramUITests.m */; };
 		3AD429AF1DB86E6200D6F0E9 /* JumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD429AE1DB86E6200D6F0E9 /* JumpManager.m */; };
+		6353C085C062F5DE74114D7A /* libPods-YFLJumpappProgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4849439D08ADC2B8EC874A6A /* libPods-YFLJumpappProgram.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		3AD429A11DB86CEB00D6F0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD429AD1DB86E6200D6F0E9 /* JumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpManager.h; sourceTree = "<group>"; };
 		3AD429AE1DB86E6200D6F0E9 /* JumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpManager.m; sourceTree = "<group>"; };
+		4849439D08ADC2B8EC874A6A /* libPods-YFLJumpappProgram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YFLJumpappProgram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51331C153CBDF32DC10F1C02 /* Pods-YFLJumpappProgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLJumpappProgram.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-YFLJumpappProgram/Pods-YFLJumpappProgram.debug.xcconfig"; sourceTree = "<group>"; };
+		D59B1F8CE2E6C95DE0E504D3 /* Pods-YFLJumpappProgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLJumpappProgram.release.xcconfig"; path = "../Pods/Target Support Files/Pods-YFLJumpappProgram/Pods-YFLJumpappProgram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6353C085C062F5DE74114D7A /* libPods-YFLJumpappProgram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141C336F25D5BFF184DDC6D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4849439D08ADC2B8EC874A6A /* libPods-YFLJumpappProgram.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AD4296E1DB86CEB00D6F0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,8 @@
 				3AD429931DB86CEB00D6F0E9 /* YFLJumpappProgramTests */,
 				3AD4299E1DB86CEB00D6F0E9 /* YFLJumpappProgramUITests */,
 				3AD429781DB86CEB00D6F0E9 /* Products */,
+				474F2FD33045E697D5B1870C /* Pods */,
+				141C336F25D5BFF184DDC6D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +160,15 @@
 			path = YFLJumpappProgramUITests;
 			sourceTree = "<group>";
 		};
+		474F2FD33045E697D5B1870C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51331C153CBDF32DC10F1C02 /* Pods-YFLJumpappProgram.debug.xcconfig */,
+				D59B1F8CE2E6C95DE0E504D3 /* Pods-YFLJumpappProgram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AD429A41DB86CEB00D6F0E9 /* Build configuration list for PBXNativeTarget "YFLJumpappProgram" */;
 			buildPhases = (
+				C6EA022179827D685ABA0374 /* [CP] Check Pods Manifest.lock */,
 				3AD429731DB86CEB00D6F0E9 /* Sources */,
 				3AD429741DB86CEB00D6F0E9 /* Frameworks */,
 				3AD429751DB86CEB00D6F0E9 /* Resources */,
+				A041CDD026E233A073688117 /* [CP] Embed Pods Frameworks */,
+				71D599C241881BEF7040513D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +239,7 @@
 				TargetAttributes = {
 					3AD429761DB86CEB00D6F0E9 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KK5694975F;
 						ProvisioningStyle = Automatic;
 					};
 					3AD4298F1DB86CEB00D6F0E9 = {
@@ -272,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71D599C241881BEF7040513D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-YFLJumpappProgram/Pods-YFLJumpappProgram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A041CDD026E233A073688117 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-YFLJumpappProgram/Pods-YFLJumpappProgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EA022179827D685ABA0374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AD429731DB86CEB00D6F0E9 /* Sources */ = {
@@ -426,8 +502,10 @@
 		};
 		3AD429A51DB86CEB00D6F0E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51331C153CBDF32DC10F1C02 /* Pods-YFLJumpappProgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KK5694975F;
 				INFOPLIST_FILE = YFLJumpappProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLJumpappProgram;
@@ -437,8 +515,10 @@
 		};
 		3AD429A61DB86CEB00D6F0E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59B1F8CE2E6C95DE0E504D3 /* Pods-YFLJumpappProgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KK5694975F;
 				INFOPLIST_FILE = YFLJumpappProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLJumpappProgram;
@@ -511,6 +591,7 @@
 				3AD429A61DB86CEB00D6F0E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AD429A71DB86CEB00D6F0E9 /* Build configuration list for PBXNativeTarget "YFLJumpappProgramTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +600,7 @@
 				3AD429A91DB86CEB00D6F0E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AD429AA1DB86CEB00D6F0E9 /* Build configuration list for PBXNativeTarget "YFLJumpappProgramUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +609,7 @@
 				3AD429AC1DB86CEB00D6F0E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
